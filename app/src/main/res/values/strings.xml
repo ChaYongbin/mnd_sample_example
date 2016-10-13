@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">국방3.0 군병원지도</string>
+    <string name="baseUrl">http://openapi.mnd.go.kr/</string>
+    <string name="key">sample</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.theodore.myapplication.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="해당 어플리케이션은 국방 3.0에서 지원하는 공공데이터를 활용하여 제작하였습니다. 자세한 안내 사항은 data.mnd.go.kr 로 접속하시면 자세한 내용을 볼 수 있습니다. (c) Theodore.Cha"
+            android:layout_width="370dp"
+            android:layout_height="match_parent"
+            android:textSize = "10sp"
+            android:id="@+id/textView2"
+            android:ellipsize="marquee"
+            android:textColor="#FFFFFF"
+            android:singleLine="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <Button
+            android:text="국군병원 목록"
+            android:layout_height="match_parent"
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+        <Button
+            android:text="홈페이지"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button2"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="국방 3.0 국군병원 안내"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mnd_img"
+        android:id="@+id/imageView"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
